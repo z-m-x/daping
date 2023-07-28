@@ -5,14 +5,14 @@
     <Header class="header"/>
     <div class="content">
       <div class="left-column">
-        <div class="top-block bg-blue" style="height: 323px; margin-bottom: 27px;">Left Top</div>
+        <div class="top-block bg-blue" style="height: 323px; margin-bottom: 27px;"><vehicleTop/></div>
         <div class="middle-block bg-yellow" style="height: 251px; margin-bottom: 32px;">Left Middle</div>
         <div class="bottom-block bg-green" style="height: 303px;">Left Bottom</div>
       </div>
       <div class="middle-column">
-        <div class="top-block bg-orange" style="height: 112px; margin-bottom: 27px;margin-top: 8px;">Middle Top</div>
+        <div class="top-block bg-orange" style="height: 112px; margin-bottom: 27px;margin-top: 8px;"><totalData/></div>
         <div class="middle-block bg-pink" style="height: 475px;margin-bottom: 11px;">Middle Middle</div>
-        <div class="bottom-block bg-red" style="height: 303px;">Middle Bottom</div>
+        <div class="bottom-block bg-red" style="height: 303px;"><traffic /></div>
       </div>
       <div class="right-column">
         <div class="top-block bg-purple" style="height: 294px; margin-bottom: 26px;">Right Top</div>
@@ -23,8 +23,15 @@
   </div>
 </template>
 <script>
-
+import vehicleTop from './vehicleTop.vue'
+import totalData from './totalData.vue'
+import traffic from './traffic.vue'
 export default {
+  components:{
+    vehicleTop,
+    totalData,
+    traffic
+  },
   data() {
     return {
 
